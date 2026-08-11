@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Webpage Title (will show on tab) -->
     <title>Professional Portfolio</title>
+    <script> function changeColor() {
+        document.getElementById("myHeader").style.backgroundColor = 
+        rgb((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    }</script>
     <style>
         /* Basic styling for the page */
         body {
@@ -41,7 +45,7 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header id = "myHeader">
         <h1>Welcome to Cooper Provins</h1>
         <nav>
             <a href="#about">About Me</a>
@@ -106,6 +110,7 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Cooper Provins. All rights reserved.</p>
+        <button onclick="changeColor()">Click for surprise</button>
     </footer>
 </body>
 </html>
