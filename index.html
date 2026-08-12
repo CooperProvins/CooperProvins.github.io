@@ -110,7 +110,14 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Cooper Provins. All rights reserved.</p>
-        <button onclick="changeColor()">Click for surprise</button>
+        <button id = "myButton">Click me!</button>
     </footer>
+
+     <script>
+        function randomColor() {
+            document.querySelector("header").style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);;
+        }
+        document.getElementById("myButton").addEventListener("click", randomColor);
+    </script>
 </body>
 </html>
