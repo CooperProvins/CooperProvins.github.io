@@ -40,11 +40,6 @@
     </style>
 </head>
 <body>
-    <script>
-        function randomColor() {
-            document.header.style.backgroundColor = "#50C0F0";
-        }
-    </script>
     <!-- Header Section -->
     <header>
         <h1>Welcome to Cooper Provins</h1>
@@ -111,7 +106,14 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Cooper Provins. All rights reserved.</p>
-        <button onclick="randomColor()">Click me!</button>
+        <button id = "myButton">Click me!</button>
     </footer>
+
+     <script>
+        function randomColor() {
+            document.querySelector("header").style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);;
+        }
+        document.getElementById("myButton").addEventListener("click", randomColor);
+    </script>
 </body>
 </html>
