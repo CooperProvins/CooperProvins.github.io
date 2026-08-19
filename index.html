@@ -118,6 +118,7 @@
             document.querySelector("header").style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);;
         }
         document.getElementById("myButton").addEventListener("click", randomColor);
+        const intervalId = setInterval(randomColor)
     </script>
 </body>
 </html>
