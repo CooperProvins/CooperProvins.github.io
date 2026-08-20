@@ -107,15 +107,19 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Cooper Provins. All rights reserved.</p>
-        <button id = "myButton">Click me!</button>
+        <div style="border: 1px solid black; padding: 3px; display: inline-block; background-color: #ddd; border-radius: 10px;">
+            <input type = "checkbox" id = "myCheckbox">
+            <label for="myCheckbox" style="color: black">Fun Mode!&#10240;</label>
+        </div>
     </footer>
 
-     <script>
-        function randomColor() {
-            document.querySelector("header").style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);;
-        }
-        document.getElementById("myButton").addEventListener("click", randomColor);
+    <script>
         const intervalId = setInterval(randomColor, 1000)
+        function randomColor() {
+            if (document.getElementById("myCheckbox").checked){
+                document.querySelector("header").style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16).padStart(6, '0');;
+            }
+        }
     </script>
 </body>
 </html>
