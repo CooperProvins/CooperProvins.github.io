@@ -26,7 +26,7 @@ nav a {
 }
 section {
     padding: 2rem;
-    border-bottom: 1px solid #ddd;
+    border: 3px solid black;
     max-width: 350px;
 }
 footer {
