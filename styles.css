@@ -6,7 +6,9 @@ body {
 }
 #divHoldsSections {
     display: flex;
-    flex-direction: rpw;
+    flex-flow: row wrap;
+    align-content: stretch;
+
 }
 header {
     background: #323e68;
@@ -25,7 +27,7 @@ nav a {
 section {
     padding: 2rem;
     border-bottom: 1px solid #ddd;
-    max-width: 50%;
+    max-width: 500px;
 }
 footer {
     text-align: center;
