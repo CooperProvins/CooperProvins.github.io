@@ -4,6 +4,10 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+#divHoldsSections {
+    display: flex;
+    flex-direction: rpw;
+}
 header {
     background: #323e68;
     color: #fff;
@@ -21,6 +25,7 @@ nav a {
 section {
     padding: 2rem;
     border-bottom: 1px solid #ddd;
+    max-width: 50%;
 }
 footer {
     text-align: center;
