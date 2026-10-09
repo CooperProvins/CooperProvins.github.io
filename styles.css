@@ -28,3 +28,13 @@ footer {
     background: #333;
     color: #fff;
 }
+#funModeDiv {
+    border: 1px solid black; 
+    padding: 3px; 
+    display: inline-block; 
+    background-color: #ddd; 
+    border-radius: 10px;
+}
+#labelForCheckbox {
+    color: black;
+}
