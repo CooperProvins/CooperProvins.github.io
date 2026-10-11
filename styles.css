@@ -6,8 +6,9 @@ body {
 }
 #divHoldsSections {
     display: flex;
-    flex-flow: row wrap;
-    align-content: stretch;
+    /* wrap? */
+    flex-flow: row;
+    /* align-content: stretch; */
 
 }
 header {
@@ -27,7 +28,7 @@ nav a {
 section {
     padding: 2rem;
     outline: 3px solid black;
-    min-width: 350px;
+    width: 700px;
 }
 footer {
     text-align: center;
