@@ -6,8 +6,7 @@ body {
 }
 #divHoldsSections {
     display: flex;
-    /* wrap? */
-    flex-flow: row;
+    flex-flow: row wrap;
     /* align-content: stretch; */
 
 }
