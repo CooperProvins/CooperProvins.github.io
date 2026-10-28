@@ -38,7 +38,7 @@ section {
 }
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     background: #333;
     color: #fff;
     display: flex;
